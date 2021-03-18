@@ -14,7 +14,7 @@ public class TurnCamera : MonoBehaviour, IDragHandler, IEndDragHandler
 	Vector2 mouseReference;
 	Vector2 mouseOffset;
  
-    void Update()
+    void LateUpdate()
     {
     	rotation += acceleration;
     	rotation *= friction;
