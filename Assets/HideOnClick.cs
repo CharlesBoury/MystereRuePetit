@@ -8,7 +8,7 @@ public class HideOnClick : MonoBehaviour, IPointerClickHandler
 {
 	Renderer myRenderer;
 
-	public void Start()
+	public void Awake()
 	{
 		myRenderer = gameObject.GetComponent<Renderer>();
 	}
